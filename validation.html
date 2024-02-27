@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<style>
+   body{
+       background-color: #595959;
+       margin: 0;
+       padding: 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 100vh;
+   form{
+       background-color: #f8ff55;
+       padding: 20px;
+       boarder-radius: 10px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+   h2{
+       text-align: center;
+       color: black;
+   }
+   label{
+       display: block;
+       margin-buttom: 8px;
+       color: darkred;
+   }
+   input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="button"] {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: green;
+        }
+
+        input[type="button"], input[type="text"], input[type="password"] {
+            border: none;
+            outline: none;
+        }
+
+        input[type="text"], input[type="password"] {
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: green;
+            }>
+</style>
+<script>
+    function validateLogin() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        
+        var correctUsername = "Sean Eddrick Pelagio";
+        var correctPassword = "seanpelagio23"
+     
+    if (username === correctUsername && password === correctPassword) {
+                window.location.href = "file.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+         }
+</script>
+<body>
+    <form>        
+     <h2>Welcome to the validation area, fill the following to identify if it is you sean!</h2>
+    <label for="username">username:</label>
+    <input type="text" id="username" required>
+    <label for="password">password:</label>
+    <input type="password" id="password" required>
+    <input type="button" value="login" onclick="validateLogin()">
+    </form>
+</body>
+</html>

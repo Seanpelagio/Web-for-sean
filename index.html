@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>front page</title>
+    </head>
+  
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            align-items: center;
+            margin: 50px;
+        }
+       
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        h5 {
+            color: #777;
+            margin-bottom: 20px;
+        }
+      
+        
+
+        button {
+            padding: 10px 20px;
+            background-color: #666f66;
+            color: #eaffea;
+            border: none;
+            cursor: pointer;        
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #1a73e8;
+        }
+        footer{
+            color: #333333df;
+            margin: 30px;
+            
+        }
+    </style>
+    <script>
+  function validateAndRedirect() {
+    window.location.href = 'validation.html';
+  }
+</script>
+    <body>
+        <h1>WELCOME</h1>
+        <img src="pic.jpg" alt="my photo" height="300" width="200">
+        <h2>The purpose of this site is for restoring your data</h2>
+        <h5>Forgot password?<br> to get your password, you need <br>to validate your identity first</h4>
+        <h5> To continue please press <br>the validate button below</h4><br><br>
+        <button onclick="validateAndRedirect()">validate</button>
+        <footer>thank you!</footer>
+
+    
+    </body>
+</html>
